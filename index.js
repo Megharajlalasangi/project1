@@ -43,7 +43,7 @@ app.post("/signin",async(req,res)=>{
         res.send("wrong name and password")
     }  
 })
-
+// delete
 app.delete('/users/:id', async (req, res) => {
     try {
       const user = await collection.findByIdAndDelete(req.params.id);
